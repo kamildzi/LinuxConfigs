@@ -104,14 +104,15 @@ else
   fi
 fi
 
-for sh in /etc/bash/bashrc.d/* ; do
-  [[ -r ${sh} ]] && source "${sh}"
-done
+# Use this if you wish to split bash configuration into files.
+#for sh in /etc/bash/bashrc.d/* ; do
+#  [[ -r ${sh} ]] && source "${sh}"
+#done
 
-# Try to keep environment pollution down.
+# Unset unused variables.
 unset use_color sh
 
-# Enable bash completion in interactive shells
+# Enable bash completion in interactive shells.
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
@@ -120,7 +121,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Set history settings
+# Set history settings.
 export HISTSIZE=50000
 export HISTTIMEFORMAT="[ %y/%m/%d %T ] "
 
