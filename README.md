@@ -2,7 +2,7 @@
 This repository contains GNU/Linux configuration files that I use in my systems.
 
 # Contents and features
-1. [Bashrc](etc/bash.bashrc) - Bash configuration
+### 1. [Bashrc](etc/bash.bashrc) - Bash configuration
 - Auto-complete enabled
 - Output coloring enabled if supported (Long time ago I copied it from one of my Gentoo systems. I cannot spot the original author at this point but thank you!)
 - Pre-set history settings (`HISTSIZE`, `HISTTIMEFORMAT`)
