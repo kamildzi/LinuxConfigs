@@ -128,3 +128,6 @@ export HISTTIMEFORMAT="[ %y/%m/%d %T ] "
 # Set default editor.
 # Choose your favourite editor and make sure it is available in the system.
 export EDITOR="nano"
+
+# PROD MARKER
+#PS1="\[\e[5;31m\]•PROD•\[\e[0m\]$PS1"
